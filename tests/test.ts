@@ -9,4 +9,5 @@ import * as secrets from '../.secrets.json';
   const aws = new AWSAccountsCollator();
   await aws.addAccount({ key: 'test-aws-acc', credentialsResolver: prefetchedCreds(secrets.profiles.jovian) });
   const res = await aws.acc('test-aws-acc').ec2.in('us-west-1').listKeyPairs();
+  console.log(res);
 })();
