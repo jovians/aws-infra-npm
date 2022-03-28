@@ -1,0 +1,15 @@
+.gitignore
+
+test.js
+test.ts
+test/**/*
+tests/**/*
+
+support/**/*
+examples/**/*
+
+**/isolate-*
+
+**/*.tgz
+
+.secrets.json
